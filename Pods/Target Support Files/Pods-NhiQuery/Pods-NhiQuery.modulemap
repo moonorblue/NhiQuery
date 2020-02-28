@@ -1,0 +1,6 @@
+framework module Pods_NhiQuery {
+  umbrella header "Pods-NhiQuery-umbrella.h"
+
+  export *
+  module * { export * }
+}

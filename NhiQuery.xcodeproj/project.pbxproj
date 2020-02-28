@@ -7,25 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A305D90240636090062A1DE /* ServiceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A305D8E240636090062A1DE /* ServiceTableViewCell.swift */; };
+		4A305D91240636090062A1DE /* ServiceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A305D8F240636090062A1DE /* ServiceTableViewCell.xib */; };
 		4A4341EA2406270C00B4431E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4341E92406270C00B4431E /* AppDelegate.swift */; };
 		4A4341EC2406270C00B4431E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4341EB2406270C00B4431E /* SceneDelegate.swift */; };
 		4A4341EE2406270C00B4431E /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4341ED2406270C00B4431E /* MasterViewController.swift */; };
-		4A4341F02406270C00B4431E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4341EF2406270C00B4431E /* DetailViewController.swift */; };
 		4A4341F32406270C00B4431E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A4341F12406270C00B4431E /* Main.storyboard */; };
 		4A4341F52406271300B4431E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A4341F42406271300B4431E /* Assets.xcassets */; };
 		4A4341F82406271300B4431E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A4341F62406271300B4431E /* LaunchScreen.storyboard */; };
+		4A434202240630EB00B4431E /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A434201240630EB00B4431E /* Model.swift */; };
+		4AE9B7822406792200305A5F /* service_data.json in Resources */ = {isa = PBXBuildFile; fileRef = 4AE9B7812406792200305A5F /* service_data.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4A4341E62406270C00B4431E /* NhiQuery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NhiQuery.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A305D8E240636090062A1DE /* ServiceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceTableViewCell.swift; sourceTree = "<group>"; };
+		4A305D8F240636090062A1DE /* ServiceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServiceTableViewCell.xib; sourceTree = "<group>"; };
+		4A4341E62406270C00B4431E /* 健保代碼查詢.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "健保代碼查詢.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A4341E92406270C00B4431E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A4341EB2406270C00B4431E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		4A4341ED2406270C00B4431E /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
-		4A4341EF2406270C00B4431E /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		4A4341F22406270C00B4431E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4A4341F42406271300B4431E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A4341F72406271300B4431E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A4341F92406271300B4431E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A434201240630EB00B4431E /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		4AE9B7812406792200305A5F /* service_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = service_data.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,18 +45,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		035D18073F14ED63C9F13B2C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		4A4341DD2406270C00B4431E = {
 			isa = PBXGroup;
 			children = (
 				4A4341E82406270C00B4431E /* NhiQuery */,
 				4A4341E72406270C00B4431E /* Products */,
+				035D18073F14ED63C9F13B2C /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
 		4A4341E72406270C00B4431E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4A4341E62406270C00B4431E /* NhiQuery.app */,
+				4A4341E62406270C00B4431E /* 健保代碼查詢.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -61,10 +75,13 @@
 				4A4341E92406270C00B4431E /* AppDelegate.swift */,
 				4A4341EB2406270C00B4431E /* SceneDelegate.swift */,
 				4A4341ED2406270C00B4431E /* MasterViewController.swift */,
-				4A4341EF2406270C00B4431E /* DetailViewController.swift */,
+				4A434201240630EB00B4431E /* Model.swift */,
+				4A305D8E240636090062A1DE /* ServiceTableViewCell.swift */,
+				4A305D8F240636090062A1DE /* ServiceTableViewCell.xib */,
 				4A4341F12406270C00B4431E /* Main.storyboard */,
 				4A4341F42406271300B4431E /* Assets.xcassets */,
 				4A4341F62406271300B4431E /* LaunchScreen.storyboard */,
+				4AE9B7812406792200305A5F /* service_data.json */,
 				4A4341F92406271300B4431E /* Info.plist */,
 			);
 			path = NhiQuery;
@@ -87,7 +104,7 @@
 			);
 			name = NhiQuery;
 			productName = NhiQuery;
-			productReference = 4A4341E62406270C00B4431E /* NhiQuery.app */;
+			productReference = 4A4341E62406270C00B4431E /* 健保代碼查詢.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -131,6 +148,8 @@
 				4A4341F82406271300B4431E /* LaunchScreen.storyboard in Resources */,
 				4A4341F52406271300B4431E /* Assets.xcassets in Resources */,
 				4A4341F32406270C00B4431E /* Main.storyboard in Resources */,
+				4AE9B7822406792200305A5F /* service_data.json in Resources */,
+				4A305D91240636090062A1DE /* ServiceTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,10 +160,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A434202240630EB00B4431E /* Model.swift in Sources */,
 				4A4341EA2406270C00B4431E /* AppDelegate.swift in Sources */,
+				4A305D90240636090062A1DE /* ServiceTableViewCell.swift in Sources */,
 				4A4341EC2406270C00B4431E /* SceneDelegate.swift in Sources */,
 				4A4341EE2406270C00B4431E /* MasterViewController.swift in Sources */,
-				4A4341F02406270C00B4431E /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,16 +309,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = U6W89DX2B6;
 				INFOPLIST_FILE = NhiQuery/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.kjcho.NhiQuery;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "";
+				PRODUCT_NAME = "健保代碼查詢";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -307,16 +330,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = U6W89DX2B6;
 				INFOPLIST_FILE = NhiQuery/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.kjcho.NhiQuery;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "";
+				PRODUCT_NAME = "健保代碼查詢";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
